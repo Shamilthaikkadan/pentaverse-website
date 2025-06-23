@@ -3569,12 +3569,14 @@ textarea:focus {
 
 .client-logos {
   width: 150px;
-  height: 80px;
+  /* height: 80px; */
 }
 
 .our-clients .slider .item {
   flex: 0 0 auto;
   height: 90px;
+  display: flex;
+  align-items: center;
 }
 
 
