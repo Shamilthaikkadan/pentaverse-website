@@ -192,8 +192,8 @@
               attributeName="d"
               dur="5s"
               values="M 0 250 C 1200 400 1200 50 3000 250 L 3000 550 L 0 550 L 0 250;
-                            M 0 250 C 400 50 400 400 3000 250 L 3000 550 L 0 550 L 0 250;
-                            M 0 250 C 1200 400 1200 50 3000 250 L 3000 550 L 0 550 L 0 250"
+                          M 0 250 C 400 50 400 400 3000 250 L 3000 550 L 0 550 L 0 250;
+                          M 0 250 C 1200 400 1200 50 3000 250 L 3000 550 L 0 550 L 0 250"
               repeatCount="indefinite"
             />
           </path>
@@ -215,277 +215,139 @@
       </div>
     </section>
     <!-- end page title -->
-    <!-- start section -->
-    <!-- <section class="position-relative pt-0 bg-gradient-top-very-light-gray sm-pt-50px"
-        data-anime='{ "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
-        <div class="container">
-            <div class="row align-items-center mb-4">
-                <div class="col-12 tab-style-04 text-center">
-                 
-                    <ul class="portfolio-filter nav nav-tabs justify-content-center border-0 fw-500">
-                        <li class="nav active"><a data-filter="*" href="#">All</a></li>
-                        <li class="nav"><a data-filter=".selected" href="#">Selected</a></li>
-                        <li class="nav"><a data-filter=".digital" href="#">Digital</a></li>
-                        <li class="nav"><a data-filter=".branding" href="#">Branding</a></li>
-                        <li class="nav"><a data-filter=".web" href="#">Web</a></li>
-                    </ul>
-                    
-                </div>
+
+    <!-- Main Content -->
+    <main class="products-main-content container">
+      <div
+        class="products-grid"
+        data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'
+      >
+        <!-- Product 1: Cloud Infrastructure -->
+        <div class="product-card">
+          <div class="product-image">
+            <img
+              src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=600&h=400&fit=crop"
+              alt="Cloud Infrastructure Solutions"
+            />
+          </div>
+          <div class="product-content">
+            <h3 class="product-title">Cloud Infrastructure Solutions</h3>
+            <p class="product-description">
+              Scalable cloud computing platforms designed for enterprise-level
+              applications with 99.9% uptime guarantee and automated scaling
+              capabilities.
+            </p>
+            <div class="product-footer">
+              <button class="learn-more-btn">Learn More</button>
             </div>
-            <div class="row mb-8 sm-mb-0">
-                <div class="col-12 filter-content p-md-0">
-                    <ul
-                        class="portfolio-modern portfolio-wrapper grid-loading grid grid-3col xxl-grid-3col xl-grid-3col lg-grid-3col md-grid-2col sm-grid-2col xs-grid-1col gutter-extra-large">
-                        <li class="grid-sizer"></li>
-                      
-                        <li class="grid-item selected digital transition-inner-all">
-                            <a href="#">
-                                <div class="portfolio-box">
-                                    <div class="portfolio-image border-radius-4px">
-                                        <img alt="" data-cfsrc="images/demo-it-business-portfolio-01.jpg"
-                                            style="display:none;visibility:hidden;" /><noscript><img
-                                                src="/assets/images/demo-it-business-portfolio-01.jpg" alt="" /></noscript>
-                                    </div>
-                                    <div class="portfolio-hover box-shadow-extra-large">
-                                        <div
-                                            class="bg-white d-flex align-items-center align-self-end text-start border-radius-4px ps-30px pe-30px pt-20px pb-20px lg-p-20px w-100">
-                                            <div class="me-auto">
-                                                <div class="fs-12 fw-500 text-medium-gray text-uppercase lh-24">Branding
-                                                </div>
-                                                <div class="fw-700 text-dark-gray text-uppercase lh-initial">Tailoring
-                                                </div>
-                                            </div>
-                                            <div class="ms-auto"><i
-                                                    class="feather icon-feather-plus icon-extra-medium text-dark-gray lh-36"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                      
-                        <li class="grid-item selected branding transition-inner-all">
-                            <a href="demo-it-business-single-project-gallery.html">
-                                <div class="portfolio-box">
-                                    <div class="portfolio-image border-radius-6px">
-                                        <img alt="" data-cfsrc="images/demo-it-business-portfolio-02.jpg"
-                                            style="display:none;visibility:hidden;" /><noscript><img
-                                                src="images/demo-it-business-portfolio-02.jpg" alt="" /></noscript>
-                                    </div>
-                                    <div class="portfolio-hover box-shadow-extra-large">
-                                        <div
-                                            class="bg-white d-flex align-items-center align-self-end text-start border-radius-4px ps-30px pe-30px pt-20px pb-20px lg-p-20px w-100">
-                                            <div class="me-auto">
-                                                <div class="fs-12 fw-500 text-medium-gray text-uppercase lh-24">Design
-                                                </div>
-                                                <div class="fw-700 text-dark-gray text-uppercase lh-initial">Spanio
-                                                </div>
-                                            </div>
-                                            <div class="ms-auto"><i
-                                                    class="feather icon-feather-plus icon-extra-medium text-dark-gray lh-36"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                      
-                        <li class="grid-item web branding transition-inner-all">
-                            <a href="demo-it-business-single-project-gallery.html">
-                                <div class="portfolio-box">
-                                    <div class="portfolio-image border-radius-6px">
-                                        <img alt="" data-cfsrc="images/demo-it-business-portfolio-03.jpg"
-                                            style="display:none;visibility:hidden;" /><noscript><img
-                                                src="images/demo-it-business-portfolio-03.jpg" alt="" /></noscript>
-                                    </div>
-                                    <div class="portfolio-hover box-shadow-extra-large">
-                                        <div
-                                            class="bg-white d-flex align-items-center align-self-end text-start border-radius-4px ps-30px pe-30px pt-20px pb-20px lg-p-20px w-100">
-                                            <div class="me-auto">
-                                                <div class="fs-12 fw-500 text-medium-gray text-uppercase lh-24">Branding
-                                                </div>
-                                                <div class="fw-700 text-dark-gray text-uppercase lh-initial">Herbal
-                                                </div>
-                                            </div>
-                                            <div class="ms-auto"><i
-                                                    class="feather icon-feather-plus icon-extra-medium text-dark-gray lh-36"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="grid-item selected digital transition-inner-all">
-                            <a href="demo-it-business-single-project-gallery.html">
-                                <div class="portfolio-box">
-                                    <div class="portfolio-image border-radius-6px">
-                                        <img alt="" data-cfsrc="images/demo-it-business-portfolio-04.jpg"
-                                            style="display:none;visibility:hidden;" /><noscript><img
-                                                src="images/demo-it-business-portfolio-04.jpg" alt="" /></noscript>
-                                    </div>
-                                    <div class="portfolio-hover box-shadow-extra-large">
-                                        <div
-                                            class="bg-white d-flex align-items-center align-self-end text-start border-radius-4px ps-30px pe-30px pt-20px pb-20px lg-p-20px w-100">
-                                            <div class="me-auto">
-                                                <div class="fs-12 fw-500 text-medium-gray text-uppercase lh-24">Brochure
-                                                </div>
-                                                <div class="fw-700 text-dark-gray text-uppercase lh-initial">Cropo</div>
-                                            </div>
-                                            <div class="ms-auto"><i
-                                                    class="feather icon-feather-plus icon-extra-medium text-dark-gray lh-36"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                  
-                        <li class="grid-item web branding transition-inner-all">
-                            <a href="demo-it-business-single-project-gallery.html">
-                                <div class="portfolio-box">
-                                    <div class="portfolio-image border-radius-6px">
-                                        <img alt="" data-cfsrc="images/demo-it-business-portfolio-05.jpg"
-                                            style="display:none;visibility:hidden;" /><noscript><img
-                                                src="images/demo-it-business-portfolio-05.jpg" alt="" /></noscript>
-                                    </div>
-                                    <div class="portfolio-hover box-shadow-extra-large">
-                                        <div
-                                            class="bg-white d-flex align-items-center align-self-end text-start border-radius-4px ps-30px pe-30px pt-20px pb-20px lg-p-20px w-100">
-                                            <div class="me-auto">
-                                                <div class="fs-12 fw-500 text-medium-gray text-uppercase lh-24">Design
-                                                </div>
-                                                <div class="fw-700 text-dark-gray text-uppercase lh-initial">Violator
-                                                </div>
-                                            </div>
-                                            <div class="ms-auto"><i
-                                                    class="feather icon-feather-plus icon-extra-medium text-dark-gray lh-36"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                    
-                        <li class="grid-item web digital transition-inner-all">
-                            <a href="demo-it-business-single-project-gallery.html">
-                                <div class="portfolio-box">
-                                    <div class="portfolio-image border-radius-6px">
-                                        <img alt="" data-cfsrc="images/demo-it-business-portfolio-06.jpg"
-                                            style="display:none;visibility:hidden;" /><noscript><img
-                                                src="images/demo-it-business-portfolio-06.jpg" alt="" /></noscript>
-                                    </div>
-                                    <div class="portfolio-hover box-shadow-extra-large">
-                                        <div
-                                            class="bg-white d-flex align-items-center align-self-end text-start border-radius-4px ps-30px pe-30px pt-20px pb-20px lg-p-20px w-100">
-                                            <div class="me-auto">
-                                                <div class="fs-12 fw-500 text-medium-gray text-uppercase lh-24">Digital
-                                                </div>
-                                                <div class="fw-700 text-dark-gray text-uppercase lh-initial">Pixflow
-                                                </div>
-                                            </div>
-                                            <div class="ms-auto"><i
-                                                    class="feather icon-feather-plus icon-extra-medium text-dark-gray lh-36"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        
-                        <li class="grid-item web digital transition-inner-all">
-                            <a href="demo-it-business-single-project-gallery.html">
-                                <div class="portfolio-box">
-                                    <div class="portfolio-image border-radius-6px">
-                                        <img alt="" data-cfsrc="images/demo-it-business-portfolio-07.jpg"
-                                            style="display:none;visibility:hidden;" /><noscript><img
-                                                src="images/demo-it-business-portfolio-07.jpg" alt="" /></noscript>
-                                    </div>
-                                    <div class="portfolio-hover box-shadow-extra-large">
-                                        <div
-                                            class="bg-white d-flex align-items-center align-self-end text-start border-radius-4px ps-30px pe-30px pt-20px pb-20px lg-p-20px w-100">
-                                            <div class="me-auto">
-                                                <div class="fs-12 fw-500 text-medium-gray text-uppercase lh-24">
-                                                    Packaging</div>
-                                                <div class="fw-700 text-dark-gray text-uppercase lh-initial">Potato
-                                                </div>
-                                            </div>
-                                            <div class="ms-auto"><i
-                                                    class="feather icon-feather-plus icon-extra-medium text-dark-gray lh-36"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                      
-                        <li class="grid-item web digital transition-inner-all">
-                            <a href="demo-it-business-single-project-gallery.html">
-                                <div class="portfolio-box">
-                                    <div class="portfolio-image border-radius-6px">
-                                        <img alt="" data-cfsrc="images/demo-it-business-portfolio-08.jpg"
-                                            style="display:none;visibility:hidden;" /><noscript><img
-                                                src="images/demo-it-business-portfolio-08.jpg" alt="" /></noscript>
-                                    </div>
-                                    <div class="portfolio-hover box-shadow-extra-large">
-                                        <div
-                                            class="bg-white d-flex align-items-center align-self-end text-start border-radius-4px ps-30px pe-30px pt-20px pb-20px lg-p-20px w-100">
-                                            <div class="me-auto">
-                                                <div class="fs-12 fw-500 text-medium-gray text-uppercase lh-24">
-                                                    Photography</div>
-                                                <div class="fw-700 text-dark-gray text-uppercase lh-initial">Cortifiel
-                                                </div>
-                                            </div>
-                                            <div class="ms-auto"><i
-                                                    class="feather icon-feather-plus icon-extra-medium text-dark-gray lh-36"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                   
-                        <li class="grid-item web digital transition-inner-all">
-                            <a href="demo-it-business-single-project-gallery.html">
-                                <div class="portfolio-box">
-                                    <div class="portfolio-image border-radius-6px">
-                                        <img alt="" data-cfsrc="images/demo-it-business-portfolio-09.jpg"
-                                            style="display:none;visibility:hidden;" /><noscript><img
-                                                src="images/demo-it-business-portfolio-09.jpg" alt="" /></noscript>
-                                    </div>
-                                    <div class="portfolio-hover box-shadow-extra-large">
-                                        <div
-                                            class="bg-white d-flex align-items-center align-self-end text-start border-radius-4px ps-30px pe-30px pt-20px pb-20px lg-p-20px w-100">
-                                            <div class="me-auto">
-                                                <div class="fs-12 fw-500 text-medium-gray text-uppercase lh-24">Brochure
-                                                </div>
-                                                <div class="fw-700 text-dark-gray text-uppercase lh-initial">Visionen
-                                                </div>
-                                            </div>
-                                            <div class="ms-auto"><i
-                                                    class="feather icon-feather-plus icon-extra-medium text-dark-gray lh-36"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-   
-                    </ul>
-                </div>
+          </div>
+        </div>
+
+        <!-- Product 2: AI Analytics -->
+        <div class="product-card">
+          <div class="product-image">
+            <img
+              src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&h=400&fit=crop"
+              alt="AI-Powered Analytics Platform"
+            />
+          </div>
+          <div class="product-content">
+            <h3 class="product-title">AI-Powered Analytics Platform</h3>
+            <p class="product-description">
+              Advanced machine learning algorithms that transform your business
+              data into actionable insights with real-time dashboard
+              visualization.
+            </p>
+            <div class="product-footer">
+              <button class="learn-more-btn">Learn More</button>
             </div>
+          </div>
         </div>
-        <div class="shape-image-animation p-0 w-100 bottom-minus-40px xl-bottom-0px d-none d-md-block">
-            <svg xmlns="http://www.w3.org/2000/svg" widht="3000" height="400" viewBox="0 180 2500 200" fill="#0118d8">
-                <path class="st1" d="M 0 250 C 1200 400 1200 50 3000 250 L 3000 550 L 0 550 L 0 250">
-                    <animate attributeName="d" dur="5s" values="M 0 250 C 1200 400 1200 50 3000 250 L 3000 550 L 0 550 L 0 250;
-                            M 0 250 C 400 50 400 400 3000 250 L 3000 550 L 0 550 L 0 250;
-                            M 0 250 C 1200 400 1200 50 3000 250 L 3000 550 L 0 550 L 0 250" repeatCount="indefinite" />
-                </path>
-            </svg>
+
+        <!-- Product 3: Custom Software -->
+        <div class="product-card">
+          <div class="product-image">
+            <img
+              src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=400&fit=crop"
+              alt="Custom Software Development"
+            />
+          </div>
+          <div class="product-content">
+            <h3 class="product-title">Custom Software Development</h3>
+            <p class="product-description">
+              Tailored software solutions built from the ground up to meet your
+              specific business requirements using cutting-edge technologies.
+            </p>
+            <div class="product-footer">
+              <button class="learn-more-btn">Learn More</button>
+            </div>
+          </div>
         </div>
-    </section> -->
-    <!-- end section -->
+
+        <!-- Product 4: Cybersecurity -->
+        <div class="product-card">
+          <div class="product-image">
+            <img
+              src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=600&h=400&fit=crop"
+              alt="Cybersecurity Suite"
+            />
+          </div>
+          <div class="product-content">
+            <h3 class="product-title">Cybersecurity Suite</h3>
+            <p class="product-description">
+              Comprehensive security solutions protecting your digital assets
+              with advanced threat detection and real-time monitoring
+              capabilities.
+            </p>
+            <div class="product-footer">
+              <button class="learn-more-btn">Learn More</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 5: Mobile Development -->
+        <div class="product-card">
+          <div class="product-image">
+            <img
+              src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=600&h=400&fit=crop"
+              alt="Mobile App Development"
+            />
+          </div>
+          <div class="product-content">
+            <h3 class="product-title">Mobile App Development</h3>
+            <p class="product-description">
+              Cross-platform mobile applications that deliver exceptional user
+              experiences across iOS and Android with native performance.
+            </p>
+            <div class="product-footer">
+              <button class="learn-more-btn">Learn More</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 6: Web Development -->
+        <div class="product-card">
+          <div class="product-image">
+            <img
+              src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=600&h=400&fit=crop"
+              alt="Web Development Framework"
+            />
+          </div>
+          <div class="product-content">
+            <h3 class="product-title">Web Development Framework</h3>
+            <p class="product-description">
+              Modern, responsive web applications built with the latest
+              technologies ensuring fast loading times and optimal user
+              engagement.
+            </p>
+            <div class="product-footer">
+              <button class="learn-more-btn">Learn More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
     <!-- start footer -->
     <footer
       class="p-0 footer-light position-relative"
@@ -710,6 +572,8 @@
     </footer>
     <!-- end footer -->
     <!-- start scroll progress -->
+
+    <!-- start scroll progress -->
     <div class="scroll-progress d-none d-xxl-block">
       <a href="#" class="scroll-top" aria-label="scroll">
         <span class="scroll-text">Scroll</span
@@ -726,6 +590,4 @@
     <script type="text/javascript" src="/assets/js/vendors.min.js"></script>
     <script type="text/javascript" src="/assets/js/main.js"></script>
   </body>
-
-  <!-- Mirrored from craftohtml.themezaa.com/demo-it-business-case-studies.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 21 Aug 2024 18:50:14 GMT -->
 </html>
